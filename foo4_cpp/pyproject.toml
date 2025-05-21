@@ -1,0 +1,13 @@
+[build-system]
+requires = ["sip >=6, <7"]
+build-backend = "sipbuild.api"
+
+[project]
+version = "0.0.4"
+name = "pyfoo"
+
+[tool.sip.bindings.pyfoo]
+headers = ["foo.h"]
+include-dirs = ["foo"]
+libraries = ["foo"]
+library-dirs = ["foo/build"]
